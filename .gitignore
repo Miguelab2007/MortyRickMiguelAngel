@@ -5,12 +5,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Archivos de construcción
+# Archivos de construcción / bundlers
 dist/
 build/
 .dist/
+.parcel-cache/
+/.next/
+/.nuxt/
 
-# Variables de entorno
+# Variables de entorno (contienen secretos)
 .env
 .env.local
 .env.*.local
@@ -18,27 +21,52 @@ build/
 # IDE y editores
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 *.swp
 *.swo
 *~
-.DS_Store
 
-# Archivos del sistema
+# Sistema operativo
+.DS_Store
 Thumbs.db
-.DS_Store
 
-# Caché de módulos
+# Caché y artefactos
 .cache/
 .pnp
 .pnp.js
-
-# Archivos temporales
-*.tmp
-*.temp
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.vercel/
+.firebase/
 
 # Logs
 logs/
 *.log
 
-# Dependencias opcionales
-.optional
+# Cobertura y pruebas
+coverage/
+.nyc_output/
+.pytest_cache/
+
+# Archivos de empaquetado / lock (opcional según flujo)
+*.tgz
+.lock-wscript
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Binarios grandes
+*.exe
+*.dll
+*.pdb
+*.app
+
+# Otros
+.DS_Store
+Thumbs.db
+.envrc
+/.env.local
