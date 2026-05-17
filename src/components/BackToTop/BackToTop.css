@@ -1,0 +1,59 @@
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #0a192f;
+  border: 2px solid #00f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.back-to-top.visible {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  border-color: #39FF14;
+  box-shadow: 0 0 25px #39FF14;
+  transform: scale(1.1) translateY(-5px);
+}
+
+.back-to-top-svg {
+  width: 24px;
+  height: 24px;
+  color: #00f0ff;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.back-to-top:hover .back-to-top-svg {
+  color: #39FF14;
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 5px #39FF14);
+}
+
+.glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.2) 0%, transparent 70%);
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.4); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.5; }
+}

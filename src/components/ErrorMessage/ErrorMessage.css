@@ -1,0 +1,57 @@
+.error-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid #ff4444;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  from { transform: rotate(-10deg); }
+  to { transform: rotate(10deg); }
+}
+
+.error-display-title {
+  color: #ff4444;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.error-display-text {
+  color: #8892b0;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.error-retry-button {
+  background: transparent;
+  color: #00f0ff;
+  border: 2px solid #00f0ff;
+  padding: 12px 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.error-retry-button:hover {
+  background: #00f0ff;
+  color: #0a192f;
+  box-shadow: 0 0 15px #00f0ff;
+}

@@ -1,0 +1,104 @@
+.home-title {
+  text-align: center;
+  color: #00f0ff;
+  margin-bottom: 40px;
+  font-size: 4.5rem;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px rgba(57, 255, 20, 0.5);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-no-results {
+  text-align: center;
+  width: 100%;
+}
+
+/* New Pagination Styles */
+.home-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.home-nav-button, .home-page-button {
+  padding: 8px 16px;
+  background-color: rgba(10, 25, 47, 0.8);
+  border: 2px solid #00f0ff;
+  border-radius: 8px;
+  color: #00f0ff;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  min-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page-button.active {
+  background-color: #00f0ff;
+  color: #0a192f;
+  box-shadow: 0 0 15px #00f0ff;
+  transform: scale(1.1);
+}
+
+.home-page-button.ellipsis {
+  border-style: dashed;
+  cursor: default;
+  background: transparent;
+  opacity: 0.7;
+}
+
+.home-nav-button:hover:not(:disabled), 
+.home-page-button:hover:not(:disabled):not(.ellipsis) {
+  background-color: rgba(57, 255, 20, 0.1);
+  border-color: #39FF14;
+  color: #39FF14;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(57, 255, 20, 0.3);
+}
+
+.home-nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #333;
+  color: #333;
+}
+
+/* Error States for Home */
+.home-error-container {
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.home-error-text {
+  color: #ff4d4d;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-retry-button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
