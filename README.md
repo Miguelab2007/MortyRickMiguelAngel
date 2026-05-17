@@ -6,7 +6,7 @@ Esta es una **Single Page Application (SPA)** de alto rendimiento construida con
 
 ---
 
-## 🎨 Estética y Diseño
+## Estética y Diseño
 La aplicación cuenta con una identidad visual única inspirada en la ciencia ficción y el multiverso:
 - **Neon Aesthetic:** Paleta de colores basada en Azul Eléctrico y Verde Portal Neón.
 - **Tipografías Sci-Fi:** Uso de `Creepster` para títulos psicodélicos y `Orbitron` para interfaces futuristas.
@@ -15,22 +15,22 @@ La aplicación cuenta con una identidad visual única inspirada en la ciencia fi
 
 ---
 
-## 🚀 Funcionalidades Principales
+## Funcionalidades Principales
 
-### 🛸 Visualización y Navegación
+### Visualización y Navegación
 - **Exploración Total:** Listado completo de personajes con imágenes y datos clave.
 - **Navegación Fluida:** Implementación de `react-router-dom` para transiciones sin recarga de página.
 - **Paginación Inteligente:** Navegación por bloques de 20 personajes para optimizar el rendimiento.
 
-### 🔍 Búsqueda y Filtrado
+### Búsqueda y Filtrado
 - **Buscador en Tiempo Real:** Filtra personajes por nombre instantáneamente desde la Home.
 - **Filtro por Especie:** Sección dedicada para segmentar por Humano, Alien, Robot y Criaturas Mitológicas.
 
-### 🪪 Detalle de Personaje
+### Detalle de Personaje
 - **Ficha Técnica:** Información exhaustiva (Estado, Origen, Locación, Episodios, etc.).
 - **Navegación Secuencial:** Botones "Anterior" y "Siguiente" dentro de la vista de detalle para una navegación continua.
 
-### 🛡️ Robustez
+### Robustez
 - **Manejo de Errores Avanzado:** Página 404 personalizada ("Wubba Lubba Dub Dub!") y componente reutilizable `ErrorMessage` para fallos de red o datos no encontrados.
 - **Lógica de Errores Especializada:** Implementación de restricciones de acceso por especie (ej. las Criaturas Mitológicas disparan un error visual controlado para demostrar el manejo de estados).
 - **Estados de Carga:** Spinner animado con estilo neón.
@@ -38,7 +38,7 @@ La aplicación cuenta con una identidad visual única inspirada en la ciencia fi
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Tecnología | Propósito |
 | :--- | :--- |
@@ -51,7 +51,7 @@ La aplicación cuenta con una identidad visual única inspirada en la ciencia fi
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```bash
 rick-and-morty-app/
@@ -77,7 +77,7 @@ rick-and-morty-app/
 
 ---
 
-## 💻 Instalación y Ejecución
+## Instalación y Ejecución
 
 Para clonar y ejecutar esta aplicación localmente, sigue estos pasos:
 
@@ -137,8 +137,8 @@ El proyecto está configurado para ser desplegado instantáneamente en las mejor
 
 ### 🌐 Desplegar en Netlify
 1. Ejecuta `npm run build`.
-2. Sube la carpeta `dist` a Netlify.
-3. El archivo `public/_redirects` garantiza que las rutas internas funcionen correctamente.
+2. Sube el contenido de la carpeta `dist/` a Netlify.
+3. El proyecto incluye la configuración necesaria para que las rutas internas funcionen correctamente.
 
 ---
 
