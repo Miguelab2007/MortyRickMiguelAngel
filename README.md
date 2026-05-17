@@ -102,49 +102,19 @@ Para clonar y ejecutar esta aplicación localmente, sigue estos pasos:
 
 ---
 
-## ✅ Cumplimiento de Requerimientos
-
-### Funcionales (100%)
-- [x] RF01: Visualización completa de personajes.
-- [x] RF02: Navegación con React Router.
-- [x] RF03: Filtrado por especie (Human, Alien, Robot, etc.).
-- [x] RF04: Consumo de API mediante `fetch` nativo.
-- [x] RF05: Diseño responsivo (PC, Tablet, Mobile).
-
-### No Funcionales & Técnicos (100%)
-- [x] RNF01: Framework React JS.
-- [x] RNF02: Gestión de rutas con `react-router-dom`.
-- [x] RNF03: Código limpio, indentado y modular.
-- [x] RNF04: Manejo de errores y estados de carga.
-
-### Extras Implementados 🌟
-- [x] Paginación funcional (20 personajes por vista).
-- [x] Buscador por nombre en tiempo real.
-- [x] Detalle individual con diseño de pasaporte.
-- [x] Estética Neón personalizada.
-- [x] **Deploy en Vercel/Netlify:** Configuración lista para producción.
-
----
-
-## 🚀 Despliegue (Deploy)
+## Despliegue (Deploy)
 
 El proyecto está configurado para ser desplegado instantáneamente en las mejores plataformas de hosting:
 
-### ⚡ Desplegar en Vercel
-1. Instala el CLI de Vercel: `npm i -g vercel`
-2. Ejecuta `vercel` en la raíz del proyecto.
-3. El archivo `vercel.json` incluido ya maneja las rutas de React Router automáticamente.
-
-### 🌐 Desplegar en Netlify
+### Desplegar en Netlify
 1. Ejecuta `npm run build`.
 2. Sube el contenido de la carpeta `dist/` a Netlify.
 3. El proyecto incluye la configuración necesaria para que las rutas internas funcionen correctamente.
 
 ---
 
-## 💳 Créditos
+## Créditos
 - **API Original:** [Rick and Morty API](https://rickandmortyapi.com/)
 - **Autor:** Miguel Angel Buitron Becerra
 
 ---
-© 2026 - Rick and Morty Multiverse SPA
