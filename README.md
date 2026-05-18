@@ -1,4 +1,4 @@
-# 🌌 Rick and Morty: Multiverse SPA
+# 🌌 Rick and Morty Multiverse 
 
 Esta es una **Single Page Application (SPA)** de alto rendimiento construida con **React** y **Vite**. El proyecto consume la [Rick and Morty API](https://rickandmortyapi.com/) para ofrecer una experiencia visualmente moderna.
 
