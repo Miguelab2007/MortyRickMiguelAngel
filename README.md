@@ -100,18 +100,6 @@ Para clonar y ejecutar esta aplicación localmente, sigue estos pasos:
 4. **Acceder a la App:**
    Abre [http://localhost:5173/](http://localhost:5173/) en tu navegador.
 
----
-
-## Despliegue (Deploy)
-
-El proyecto está configurado para ser desplegado instantáneamente en las mejores plataformas de hosting:
-
-### Desplegar en Netlify
-1. Ejecuta `npm run build`.
-2. Sube el contenido de la carpeta `dist/` a Netlify.
-3. El proyecto incluye la configuración necesaria para que las rutas internas funcionen correctamente.
-
----
 
 ## Créditos
 - **API Original:** [Rick and Morty API](https://rickandmortyapi.com/)
