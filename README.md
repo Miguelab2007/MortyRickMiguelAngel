@@ -51,7 +51,7 @@ La aplicación cuenta con una identidad visual única inspirada en la ciencia fi
 
 ---
 
-## Estructura del Proyecto
+## Estuctuara del Proyecto
 
 ```bash
 rick-and-morty-app/
@@ -100,6 +100,7 @@ Para clonar y ejecutar esta aplicación localmente, sigue estos pasos:
 4. **Acceder a la App:**
    Abre [http://localhost:5173/](http://localhost:5173/) en tu navegador.
 
+---
 
 ## Créditos
 - **API Original:** [Rick and Morty API](https://rickandmortyapi.com/)

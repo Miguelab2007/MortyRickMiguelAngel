@@ -39,7 +39,6 @@ Thumbs.db
 .turbo/
 .next/
 .nuxt/
-.vercel/
 .firebase/
 
 # Logs
@@ -70,4 +69,3 @@ coverage/
 Thumbs.db
 .envrc
 /.env.local
-.vercel
