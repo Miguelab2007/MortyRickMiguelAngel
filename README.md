@@ -6,15 +6,6 @@ Esta es una **Single Page Application (SPA)** de alto rendimiento construida con
 
 ---
 
-## Estética y Diseño
-La aplicación cuenta con una identidad visual única inspirada en la ciencia ficción y el multiverso:
-- **Neon Aesthetic:** Paleta de colores basada en Azul Eléctrico y Verde Portal Neón.
-- **Tipografías Sci-Fi:** Uso de `Creepster` para títulos psicodélicos y `Orbitron` para interfaces futuristas.
-- **Passport Detail:** Los detalles de los personajes se presentan como una tarjeta de identificación interdimensional.
-- **Efectos Glow:** Resplandores dinámicos y sombras neón en todos los elementos interactivos.
-
----
-
 ## Funcionalidades Principales
 
 ### Visualización y Navegación
