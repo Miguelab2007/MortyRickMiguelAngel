@@ -26,7 +26,7 @@ const FilterBySpecies = () => {
         setError(null);
         const data = await getAllCharacters();
         setAllCharacters(data);
-        const initialFiltered = data.filter((char) => char.species === 'Human');
+        const initialFiltered = data.filter((char) => char.especie === 'Human');
         setFilteredCharacters(initialFiltered);
       } catch (err) {
         console.error('Error fetching characters:', err);
@@ -40,7 +40,7 @@ const FilterBySpecies = () => {
 
   const handleFilter = (species) => {
     setSelectedSpecies(species);
-    const filtered = allCharacters.filter((char) => char.species === species);
+    const filtered = allCharacters.filter((char) => char.especie === species);
     setFilteredCharacters(filtered);
   };
 

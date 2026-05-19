@@ -39,9 +39,23 @@ const Home = () => {
     setCurrentPage(1);
   }, [searchTerm, location.pathname]);
 
-  const filteredCharacters = characters.filter((char) =>
-    char.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredCharacters = characters.filter((char) => {
+    if (!searchTerm.trim()) return true;
+    
+    const searchLower = searchTerm.toLowerCase().trim();
+    const nombre = (char.nombre || '').toLowerCase();
+    const especie = (char.especie || '').toLowerCase();
+    const estado = (char.estado || '').toLowerCase();
+    const tipo = (char.tipo || '').toLowerCase();
+    
+    // Busca que COMIENCE por el término (startsWith) en cualquier campo
+    return (
+      nombre.startsWith(searchLower) ||
+      especie.startsWith(searchLower) ||
+      estado.startsWith(searchLower) ||
+      tipo.startsWith(searchLower)
+    );
+  });
 
   const totalPages = Math.ceil(filteredCharacters.length / charactersPerPage);
   

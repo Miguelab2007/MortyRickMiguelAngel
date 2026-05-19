@@ -12,15 +12,15 @@ const CharacterCard = ({ character }) => {
   return (
     <div className="character-card" onClick={handleDetail}>
       <img 
-        src={character.image} 
-        alt={character.name} 
+        src={character.imagen} 
+        alt={character.nombre} 
         className="character-card-image" 
       />
       <div className="character-card-info">
-        <h3 className="character-card-name">{character.name}</h3>
-        <p className="character-card-text"><strong>Especie:</strong> {character.species}</p>
-        <p className="character-card-text"><strong>Estado:</strong> {character.status}</p>
-        <p className="character-card-text"><strong>Género:</strong> {character.gender}</p>
+        <h3 className="character-card-name">{character.nombre}</h3>
+        <p className="character-card-text"><strong>Especie:</strong> {character.especie}</p>
+        <p className="character-card-text"><strong>Estado:</strong> {character.estado}</p>
+        <p className="character-card-text"><strong>Género:</strong> {character.genero}</p>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const CharacterDetail = () => {
         const data = await getCharacterById(id);
         
         // RF-FORCED: Forzar error si es Criatura Mitológica según requerimiento del usuario
-        if (data.species === 'Mythological Creature') {
+        if (data.especie === 'Mythological Creature') {
           setError(true);
           setLoading(false);
           return;
@@ -64,22 +64,22 @@ const CharacterDetail = () => {
         
         <div className="detail-content passport-content-responsive">
           <div className="detail-photo-container passport-photo-container">
-            <img src={character.image} alt={character.name} className="detail-image passport-image" />
+            <img src={character.imagen} alt={character.nombre} className="detail-image passport-image" />
             <div className="detail-id-badge">ID: {character.id.toString().padStart(5, '0')}</div>
           </div>
           
           <div className="detail-details">
-            <h3 className="detail-name">{character.name.toUpperCase()}</h3>
+            <h3 className="detail-name">{character.nombre.toUpperCase()}</h3>
             
             <div className="detail-info-grid">
-              <p className="detail-info-item"><strong>ESTADO:</strong> {character.status}</p>
-              <p className="detail-info-item"><strong>ESPECIE:</strong> {character.species}</p>
-              <p className="detail-info-item"><strong>GÉNERO:</strong> {character.gender}</p>
-              <p className="detail-info-item"><strong>TIPO:</strong> {character.type || 'N/A'}</p>
-              <p className="detail-info-item"><strong>ORIGEN:</strong> {character.origin.name}</p>
-              <p className="detail-info-item"><strong>LOCACIÓN:</strong> {character.location.name}</p>
-              <p className="detail-info-item"><strong>EPISODIOS:</strong> {character.episode.length}</p>
-              <p className="detail-info-item"><strong>CREADO:</strong> {new Date(character.created).toLocaleDateString()}</p>
+              <p className="detail-info-item"><strong>ESTADO:</strong> {character.estado}</p>
+              <p className="detail-info-item"><strong>ESPECIE:</strong> {character.especie}</p>
+              <p className="detail-info-item"><strong>GéNERO:</strong> {character.genero}</p>
+              <p className="detail-info-item"><strong>TIPO:</strong> {character.tipo || 'N/A'}</p>
+              <p className="detail-info-item"><strong>ORIGEN:</strong> {character.origen.nombre}</p>
+              <p className="detail-info-item"><strong>LOCACIÓN:</strong> {character.ubicacion.nombre}</p>
+              <p className="detail-info-item"><strong>EPISODIOS:</strong> {character.episodios.length}</p>
+              <p className="detail-info-item"><strong>CREADO:</strong> {new Date(character.creado).toLocaleDateString()}</p>
             </div>
           </div>
         </div>
